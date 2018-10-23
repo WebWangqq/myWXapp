@@ -1,0 +1,73 @@
+page {background-color: #f2f2f2;font-size:14px;}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.clearfix:after {content:"."; clear:both; display:block; height:0; font-size:0; visibility:hidden; overflow:hidden;}
+.clearfix {display:block;}
+
+.dingxian{position:fixed;top:0;left:0;width:100%;height:1px;background-color:#dcdcdc;z-index:1000;
+-webkit-transform: scaleY(0.5);
+-moz-transform: scaleY(0.5);
+-ms-transform: scaleY(0.5);
+-o-transform: scaleY(0.5);
+transform: scaleY(0.5);
+}
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.7);z-index:100}
+
+.bottomLine{width:100%;height:1px;background-color:#dcdcdc;
+-webkit-transform: scaleY(0.5);
+-moz-transform: scaleY(0.5);
+-ms-transform: scaleY(0.5);
+-o-transform: scaleY(0.5);
+transform: scaleY(0.5);
+}
+
+.formInfo{margin-top:30rpx;background-color:#fff;}
+.formInfo .item{position:relative;height:90rpx;line-height:90rpx;margin-left:35rpx;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:box;display:-moz-box;display:-webkit-box;}
+.formInfo .item:after{content:'';position: absolute;left:0;bottom:0;width:100%;height:1px;background-color:#dcdcdc;
+-webkit-transform: scaleY(0.5);
+-moz-transform: scaleY(0.5);
+-ms-transform: scaleY(0.5);
+-o-transform: scaleY(0.5);
+transform: scaleY(0.5);
+}
+.formInfo > .item:last-child:after{height:0;}
+.formInfo .item label{display:block;min-width:160rpx;padding-right:10rpx;}
+.formInfo .item .info{position:relative;height:100%;box-flex:1; -moz-box-flex:1; -webkit-box-flex:1;}
+.formInfo .item .info .field{display:block;width:100%;height:100%;}
+.formInfo .item .yzm{position:relative;display:block;width:180rpx;text-align:center;}
+.formInfo .item .yzm:before{position:absolute;top:50%;left:0;content:'';width:1px;height:60rpx;margin-top:-30rpx;background-color: #dcdcdc;
+-webkit-transform: scaleX(0.5);
+-moz-transform: scaleX(0.5);
+-ms-transform: scaleX(0.5);
+-o-transform: scaleX(0.5);
+transform: scaleX(0.5);
+}
+.formInfo .itemCon{position:relative;}
+.formInfo .itemCon:last-child .item:after{height:0;}
+.formInfo .arrowRightCon{position:relative;width:60rpx;}
+.arrowRight{position:absolute;top:50%;right:20rpx;display:block;width:40rpx;height:40rpx;margin-top:-20rpx;}
+
+.btnMain{display:block;height:80rpx;margin:100rpx 45rpx 0;text-align:center;line-height:80rpx;font-size:34rpx;color:#fff;border-radius:80rpx;background-color:#cea76e;}
+.btnMain:active{background-color:#edb460;}
+.btnGray{background-color:#dddddd;color:#fff;}/*灰色背景*/
+.btnGray:active{background-color:#dddddd;}
+.btnAddCard{display:block;height:80rpx;margin:0 45rpx;text-align:center;line-height:80rpx;color:#cea76e;font-size:36rpx;border:1rpx dashed #999999;border-radius:80rpx;}
+
+.active{background-color:#dcdcdc;}
+
+.colorMain{color:#cea76e;}/*红色文字*/
+.colorBlue{color:#477aac;}/*蓝色文字*/
+.colorGray{color:#8e8e8e;}/*灰色文字*/
+.colorYellow{color:#f7941d;}/*黄色文字*/
+.textCenter{text-align:center;}
+.textRight{text-align:right;}
+.textUnder{text-decoration:underline;}
+
+/*tipBox*/
+#tipBox{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;background-color:rgba(0,0,0,0); z-index:10000;overflow:hidden;}
+#tipBoxCon{position:fixed;max-width:60%;min-width:200rpx;padding:10px;background-color:rgba(0,0,0,.7);border-radius:5px;}
+#tipBoxCon .con{text-align:center;color:#fff;font-size:24rpx;}
+
+

@@ -1,0 +1,277 @@
+<view class='dingxian'></view>
+
+<view class="specialityCon clearfix">
+	<block wx:for="{{specialitySamll}}" wx:key="id" wx:for-index="specialityIndex">
+		<view class="item" data-index="{{specialityIndex}}" bindtap="{{item.specialityTap}}">
+			<image class="img" mode="aspectFill" src="{{item.imgsrcSamll}}" />
+			<view class="label" wx:if="{{item.biaoqian!='' }}"><image src="../image/shop/a_biao@2x.png" /><text>{{item.biaoqian}}</text></view>
+			<view class="more" wx:if="{{specialityIndex==7}}">
+				<view class="con">
+					<view class="text">共{{speciality.length}}个</view>
+					<view class="text">特色推荐</view>
+					<image src="../image/shop/q_gengduo@3x.png" />
+				</view>
+			</view>
+		</view>
+	</block>
+	<!-- <view class="item" bindtap="previewSpecialImg">
+		<image class="img" mode="aspectFill" src="http://api.qujie365.com/upload/20171118135026677284.jpg" />
+		<view class="label"><image src="../image/shop/a_biao@2x.png" /><text>店长推荐</text></view>
+	</view>
+	<view class="item">
+		<image class="img" mode="aspectFill" src="../image/shop/a_zanwutuijian@2x.png" />
+	</view>
+	<view class="item" catchtap="toTesetuijian">
+		<image class="img" mode="aspectFill" src="../image/shop/a_zanwutuijian@2x.png" />
+		<view class="more">
+			<view class="con">
+				<view class="text">共139个</view>
+				<view class="text">特色推荐</view>
+				<image src="../image/shop/a_zanwutuijian@2x.png" />
+			</view>
+		</view>
+	</view> -->
+</view>
+<!--//特色推荐end-->
+
+<view class="shopInfoCon">
+	<view class="shopInfo">
+		<image class="img"  src="../image/shop/a_qujiedianpu@2x.png" />
+		<image class="logo" src="../image/shop/a_logo@3x.png" />
+		<view class="shopName">店铺明湖曾</view>
+		<view class="shopType">
+			<text class="type">美食餐饮·火锅</text>
+			<view class="attention" wx:if="{{noAttention}}">
+				<button plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+					<view class="con">
+						<image src="../image/shop/a_guanzhu@2x.png" />
+						<text>关注</text>
+					</view>
+				</button>
+			</view>
+		</view>
+	</view>
+	<!--//shopInfo end-->
+	<view class="linkCon">
+		<view class="addressCon">
+			<view class="address">
+				<image class="ico" src="../image/shop/a_dizhi@2x.png" />
+				<text>天津市东丽区空港经济区融合广场天津市东丽区空港经济区融合广场</text>
+			</view>
+			<view class="distance">距你32Km</view>
+		</view>
+		<view class="shopTel" bindtap="callUp" data-shopTel="{{shopTel}}"><image src="../image/shop/a_dianhua@2x.png" /></view>
+	</view>
+</view>
+<!--//shopInfoCon end-->
+
+<view class="myActivity">
+	<view class="navTitle">我的活动-优惠</view>
+	<scroll-view class="quanCon" scroll-x="true">
+		<view class="content">
+			
+			<!--//分享领取-->
+			<view class="itemCon">
+				<form name="formid" report-submit>
+	      			<button form-type='submit' plain="true" open-type="share">
+	      				<view class="con">
+							<image class="bg" src="../image/shop/a_fenxianglingqu@2x.png" />
+							<view class="textCon">
+								<view class="text">免费享受价值100元酸菜免费享受价值100元酸菜</view>
+								<view class="text">领取次日生效</view>
+							</view>
+						</view>
+					</button>
+				</form>
+			</view>
+			<!--//分享领取 end-->
+
+			<!--//立即领取-->
+			<view class="itemCon">
+				<form name="formid" report-submit bindsubmit=''>
+	      			<button form-type='submit' plain="true">
+						<view class="con">
+							<image class="bg" src="../image/shop/a_lijilingqu@2x.png" />
+							<view class="textCon">
+								<view class="text">满100元减30元</view>
+								<view class="text">领取当日生效</view>
+							</view>
+						</view>
+					</button>
+				</form>
+			</view>
+			<!--//立即领取 end-->
+
+			<!--//立即使用-->
+			<view class="itemCon toUse">
+				<form name="formid" report-submit bindsubmit=''>
+	      			<button form-type='submit' plain="true">
+						<view class="con">
+							<image class="bg" src="../image/shop/a_zhengchangquan@2x.png" />
+							<view class="textCon">
+								<view class="text">满100元减30元</view>
+								<view class="text">2018.04.12-2018.04.12</view>
+							</view>
+							<view class="btn">立即使用</view>
+						</view>
+					</button>
+				</form>
+			</view>
+			<!--//立即使用 end-->
+
+			<!--//已使用-->
+			<view class="itemCon used">
+				<form name="formid" report-submit bindsubmit=''>
+	      			<button form-type='submit' plain="true">
+	      				<view class="con">
+							<image class="bg" src="../image/shop/a_yishiyong@2x.png" />
+							<view class="textCon">
+								<view class="text">满100元减30元</view>
+								<view class="text">2018.04.12-2018.04.12</view>
+							</view>
+							<view class="btn">已使用</view>
+						</view>
+					</button>
+				</form>
+			</view>
+			<!--//已使用 end-->
+
+			<!--//已过期-->
+			<view class="itemCon used">
+				<form name="formid" report-submit bindsubmit=''>
+	      			<button form-type='submit' plain="true">
+	      				<view class="con">
+							<image class="bg" src="../image/shop/a_yishiyong@2x.png" />
+							<view class="textCon">
+								<view class="text">满100元减30元</view>
+								<view class="text">2018.04.12-2018.04.12</view>
+							</view>
+							<view class="btn">已过期</view>
+						</view>
+					</button>
+				</form>
+			</view>
+			<!--//已过期 end-->
+			
+			<view class="itemCon more">
+				<view class="morecon">
+					<view>查看更多</view>
+					<image src="../image/shop/a_chakangengduo@2x.png" />
+				</view>
+			</view>
+		
+			<!--//-->
+		</view>
+	</scroll-view>
+</view>
+<!--//我的活动end-->
+
+<!--shopDynamic-->
+<view class="shopDynamic">
+	<view class="navTitle">最新动态</view>
+	<view class="list">
+		<view class="itemCon">
+			<image class="logo" src="../image/shop/a_logo@3x.png" />
+			<view class="shopName">店铺明湖曾</view>
+			<view class="time">13小时</view>
+			<view class="shopText">我的生活圈动态我的生活圈动态我的生活圈动态我的生活圈动态我的生活圈动态</view>
+			<view class="shopImg clearfix">
+                <image src="http://api.qujie365.com/upload/20171118135026677284.jpg" mode="aspectFill" />
+                <image src="http://api.qujie365.com/upload/20171118135026677284.jpg" mode="aspectFill" />
+                <image src="http://api.qujie365.com/upload/20171118135026677284.jpg" mode="aspectFill" />
+                <image src="http://api.qujie365.com/upload/20171118135026677284.jpg" mode="aspectFill" />
+                <image src="http://api.qujie365.com/upload/20171118135026677284.jpg" mode="aspectFill" />
+            </view>
+            <!--//shopVideo-->
+            <view class="shopVideo">
+            	<view class="shopVideoCon">
+            		<image mode="widthFix" style="width:444rpx;" src="http://api.qujie365.com/upload/20171118135026677284.jpg" />
+            		<image src="../image/bofang@3x.png" />
+            	</view>
+            </view>
+	        <!--//shopVideo end-->
+		</view>
+	</view>
+</view>
+<!--//shopDynamic end-->
+
+<view class="footerNav">
+	<view class="item">
+		<form name="formid" report-submit bindsubmit=''>
+	        <button form-type='submit' plain="true">
+	        	<view class="con">
+					<image src="../image/shop/a_shouye@2x.png" />
+					<view>首页</view>
+				</view>
+			</button>
+		</form>
+	</view>
+	<view class="item">
+		<form name="formid" report-submit bindsubmit=''>
+	        <button form-type='submit' plain="true" open-type="share">
+	        	<view class="con">
+					<image class="share" src="../image/shop/a_fenxiangyouli@2x.png" />
+					<view>分享有礼</view>
+				</view>
+			</button>
+		</form>
+	</view>
+	<view class="chat">
+		<form name="formid" report-submit bindsubmit=''>
+	        <button form-type='submit' plain="true">
+	        	<view class="btn">聊一聊</view>
+			</button>
+		</form>
+	</view>
+</view>
+
+<!--//-->
+
+<!--//previewImgBox-->
+<view class='previewImgBox' wx:if="{{showPreviewImgBox}}">
+    <swiper class="swipwerCon" current='{{current}}' bindchange="swiperChange">
+    	<block wx:for="{{specialityBig}}" wx:key="id" wx:for-index="swiperIndex">
+	        <swiper-item id="item{{swiperIndex}}" bindtap="hideimgpreview" bindtouchmove="touchM" bindtouchend="touchE">
+	            <image mode='widthFix' class='img' src='{{item.imgsrcSamll}}' />
+	            <image mode='widthFix' class="img big {{item.loadComplete ? 'show' :''}}" src='{{item.imgsrc}}' data-src="{{item.imgsrc}}" bindtap="previewBigImg" bindload="bigImgLoad" />
+	            <view class='textCon'>
+	            	<image class="bg" src="../image/shop/a_zhezhao@2x.png" />
+	            	<view class="label" wx:if="{{item.biaoqian!='' }}">
+	            		<image src="../image/shop/a_yinzhang@2x.png" />
+	            		<text>{{item.biaoqian}}</text>
+	            	</view>
+	            	<view class="content">
+	            		<view class="con">
+		            		<text>名称：</text>
+		            		<view class="info">酸菜鱼</view>
+		            	</view>
+		            	<view class="con">
+		            		<text>名称：</text>
+		            		<view class="info">酸菜鱼酸菜鱼酸菜鱼</view>
+		            	</view>
+		            	<view class="con">
+		            		<text>名称酸菜鱼：</text>
+		            		<view class="info">酸菜鱼酸菜鱼酸菜鱼酸菜鱼酸菜鱼</view>
+		            	</view>
+	            	</view>
+	            </view>
+	        </swiper-item>
+        </block>
+    </swiper>
+    <view class="more" style='{{moreStyle}}'>
+    	<view>
+	    	<image src="../image/shop/a_shifanggengduo@2x.png" />
+			<view>释放全部图片</view>
+		</view>
+    </view>
+</view>
+<!--//previewImgBox end-->
+
+<!--//-->
+
+<view id="tipBox" wx:if="{{tipBoxShow}}" catchtouchmove='true'>
+	<view id="tipBoxCon">
+		<image class="ico {{tipBoxIcon}}" src="{{tipBoxImage}}" />
+		<view class="con">{{tipBoxText}}</view>
+	</view>
+</view> 

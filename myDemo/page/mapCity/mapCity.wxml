@@ -1,0 +1,6 @@
+
+<view class="cityCon">
+	<block wx:for="{{cityData}}" wx:key="id">
+		<view class="item" data-id="{{item.id}}" bind:tap="toDetail">{{item.name}}</view>
+	</block>
+</view>

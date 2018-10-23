@@ -1,0 +1,2 @@
+<!--components/test.wxml-->
+<view class='inner'>{{testTxt}}</view>

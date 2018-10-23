@@ -1,0 +1,33 @@
+<view class='dingxian'></view>
+<view class="tabCon clearfix">
+	<view class="item" catchtap="filterArea1"><view class="text">全城</view><view class="ico"></view></view>
+	<view class="item" catchtap="woyicanyu"><view class="text">我已参与</view><view class="ico"></view></view>
+	<view class="item" catchtap="qyqwaitItem"><view class="text">即将开抢</view><view class="ico"></view></view>
+</view>
+<view class="overlay" catchtouchmove='preventTouchMove' catchtap="hideFilter"></view>
+<view class="tabContent clearfix" catchtouchmove="preventTouchMove">
+	<view class="leftCon" id="distictWrap" catchtouchmove='preventTouchMove'>
+		<scroll-view class="locationScroll" scroll-y="{{qyScroll}}" style="max-height:{{filterMaxHeight}}px;min-height:440rpx;{{locationScroll}}">
+			<view id="qyContent" class="content" catchtouchmove="{{qyScroll ? '' : 'preventTouchMove'}}">
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+			</view>
+		</scroll-view>
+	</view>
+  <!--//商圈-->
+  <view class="rightCon" catchtouchmove='preventTouchMove'>
+    <scroll-view class="locationScroll" scroll-y="{{sqScroll}}" style="max-height:{{filterMaxHeight}}px;min-height:440rpx;">
+      <view id="sqContent" class="content" catchtouchmove="{{sqScroll ? '' : 'preventTouchMove'}}">
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+        <view class="item">附近</view>
+      </view>
+    </scroll-view>
+  </view>
+  <!--//商圈end-->
+</view>
+
+<!--//-->

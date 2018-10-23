@@ -1,0 +1,61 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.4",
+	"appid": "wx7dff9ebddae39af8",
+	"projectname": "myDemo",
+	"svr": "/",
+	"client": "/",
+	"qcloudRoot": "/",
+	"miniprogramRoot": "/",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "test",
+					"pathName": "page/tabBar2/tabBar2",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": 1,
+					"name": "1",
+					"pathName": "page/mapCity/mapCity",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": 2,
+					"name": "1",
+					"pathName": "page/daohang/daohang",
+					"query": "",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

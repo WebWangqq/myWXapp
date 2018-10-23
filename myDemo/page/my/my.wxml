@@ -1,0 +1,29 @@
+<view class="container">
+	<swiper class="activity" indicator-dots="true" autoplay="true" interval="3000" circular="true">
+		<swiper-item wx:for="{{activityImg}}" wx:key="id"><image src="{{item.src}}" /></swiper-item>
+	</swiper>
+	<view class="currentAddress">当前位置:{{address}}</view>
+	<view class="mainBgColor useInfo">
+		<image class="avatar" src="{{userImg}}"/>
+		<view class="nickname">昵称：{{nickName}}</view>
+	</view>
+
+	<view class="myImg">
+		<block wx:for="{{photos}}" wx:key="id" wx:for-index="index">
+			<view class='item'>
+				<image src="{{item}}" data-src="{{item}}" bindtap="previewImg" />
+				<icon type="cancel" size="20" color="#f00" data-index="{{index}}" bindtap="deleteImg" />
+			</view>
+		</block>
+		<view class="item last" bindtap='chooseImg' hidden="{{imgEnough}}"></view>
+		<view class="clear"></view>
+	</view>
+
+	<view wx:for="{{activityImg}}" wx:for-index="idx" wx:key="id">
+		{{idx}}:{{item.src}}
+	</view>
+</view>
+
+<!--
+
+-->

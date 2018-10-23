@@ -1,0 +1,50 @@
+<view class="dingxian"></view>
+
+
+<swiper class="listCon" autoplay='true' circular='true' vertical='true' duration="1000" interval='2000' bindchange="bannerChange">
+	<block wx:for="{{mydata}}" wx:key="swiperindex" wx:for-index="swiperindex">
+		<swiper-item class="itemCon {{swiperCurrent==swiperindex ? 'current' :''}}" catchtouchmove="stopTouchMove">
+			<block wx:for="{{item}}" wx:key="id">
+				<view class="item">
+					<image src="{{item.img}}"></image>
+					<view class="name">{{item.name}}</view>
+					<view class="btn">去拼单</view>
+				</view>
+			</block>
+
+		</swiper-item>
+	</block>
+</swiper>
+
+
+
+<view class="mySwiperCon" catchtouchmove="stopTouchMove">
+
+	<view class="con con1" animation="{{animationData1}}" style="z-index:{{zindex1}};">
+		<block wx:for="{{mydata}}" wx:key="swiperindex" wx:for-index="myswiperindex1">
+			<view class="itemCon {{myswiperCurrent1==myswiperindex1 ? 'current' :''}}" catchtouchmove="stopTouchMove">
+				<block wx:for="{{item}}" wx:key="id">
+					<view class="item">
+						<image src="{{item.img}}"></image>
+						<view class="name">{{item.name}}</view>
+						<view class="btn">去拼单</view>
+					</view>
+				</block>
+			</view>
+		</block>
+	</view>
+	<view class="con con2" animation="{{animationData2}}" style="z-index:{{zindex2}};">
+		<block wx:for="{{mydata}}" wx:key="swiperindex" wx:for-index="myswiperindex2">
+			<view class="itemCon {{myswiperCurrent2==myswiperindex2 ? 'current' :''}}" catchtouchmove="stopTouchMove">
+				<block wx:for="{{item}}" wx:key="id">
+					<view class="item">
+						<image src="{{item.img}}"></image>
+						<view class="name">{{item.name}}</view>
+						<view class="btn">去拼单</view>
+					</view>
+				</block>
+			</view>
+		</block>
+	</view>
+
+</view>

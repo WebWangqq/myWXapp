@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "page/tabBar/tabBar",
+        "page/tabBar2/tabBar2",
+        "page/map/map",
+        "page/demo/demo",
+        
+        "page/search/search",
+        "page/filterNav/filterNav",
+        "page/H5/H5",
+        "page/info/info",
+        "page/order/order",
+        "page/index/index",
+        "page/myGrade/myGrade",
+        "page/my/my",
+        "page/shopDetail/shopDetail",
+        "page/tesetuijian/tesetuijian",
+        "page/mapSearch/index",
+        "page/mapCity/mapCity",
+        "page/mapCityDetail/mapCityDetail",
+        "page/daohang/daohang"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "趣街",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#878787",
+        "selectedColor": "#ff693e",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "page/index/index",
+                "iconPath": "img/order_1.png",
+                "selectedIconPath": "img/order_2.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "page/order/order",
+                "iconPath": "img/order_1.png",
+                "selectedIconPath": "img/order_2.png",
+                "text": "信息"
+            },
+            {
+                "pagePath": "page/my/my",
+                "iconPath": "img/my_1.png",
+                "selectedIconPath": "img/my_2.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

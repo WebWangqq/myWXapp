@@ -1,0 +1,58 @@
+<view class="dingxian"></view>
+<view class="searchCon">
+    <view class="slect" catchtap="toSearch">
+    	<image class="ico" src="../image/sousuo/a_sousuo@2x.png"></image>
+        <view class="text">请输入搜索内容</view>
+    </view>
+</view>
+<view class="typeWrap clearfix">
+    <view class="left typeLeftCon">
+        <scroll-view scroll-y="true" style="height:{{scrollHeight}}px" scroll-top="{{typeLeftScollTop}}"  scroll-with-animation="true" >
+            <view id="typeLeft0" class="item {{leftIndex==0 ? 'current' : ''}}" catchtap="typeLeftNav" data-index="0">为你推荐</view>
+            <block wx:for="{{shoptypeData}}" wx:key="id" wx:for-index="index">
+                <view id="typeLeft{{index+1}}" class="item {{leftIndex==index+1 ? 'current' : ''}}" catchtap="typeLeftNav" data-index="{{index+1}}">{{item.Typename}}</view>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="left typeRightCon">
+        <scroll-view scroll-y="true" style="height:{{scrollHeight}}px" scroll-into-view="typeRight{{toView}}" scroll-with-animation="true" bindscroll="typeRightSroll">
+            <view class="content">
+                <view class="itemCon" id="typeRight0">
+                    <view class="itemImgCon clearfix">
+                        <block wx:for="{{tuijianData}}" wx:key="id">
+                            <block wx:if="{{item.ShopType==1}}">
+                                <view class="itemImg" catchtap="toerjihangye" data-shoptypeid="{{item.ShopTypeID}}" data-typename="{{item.ShopTypeName}}">
+                                    <image mode="aspectFill" src="{{item.TypeImg}}"/>
+                                    <view class="text">{{item.ShopTypeName}}</view>
+                                </view>
+                            </block>
+                            <block wx:if="{{item.ShopType==2}}">
+                                <view class="itemImg" catchtap="toerjilist" data-shoptypeid="{{item.BigShopTypeID}}" data-smallshoptypeid="{{item.SmallShopTypeID}}" data-typename="{{item.ShopTypeName}}">
+                                    <image mode="aspectFill" src="{{item.TypeImg}}"/>
+                                    <view class="text">{{item.ShopTypeName}}</view>
+                                </view>
+                            </block>
+                        </block>
+                    </view>
+                </view>
+                <block wx:for="{{shoptypeData}}" wx:key="id" wx:for-index="indexRight">
+                    <view class="itemCon" id="typeRight{{indexRight+1}}">
+                        <view class="titleCon">
+                            <view class="ico"><image src="{{item.StereoBuildingBig}}" /></view>
+                            <view class="title fontW">{{item.Typename}}</view>
+                            <view class="tosee colorGray" catchtap="toerjihangye" data-index="{{indexRight}}" data-shoptypeid="{{item.ShopTypeID}}" data-typename="{{item.Typename}}">去看看<image class="arrowRight" src="../image/sousuo/a_pintuanchakangengduo@2x.png" /></view>  
+                        </view>
+                        <view class="typecon clearfix">
+                            <block wx:for="{{item.SmallShopTypeList}}" wx:key="id">
+                                <view class="item" catchtap="toerjilist" data-shoptypeid="{{item.BigShopTypeID}}" data-smallshoptypeid="{{item.SmallShopTypeID}}" data-typename="{{item.TypeName}}">
+                                    <image class="ico" src="{{item.TypeImg}}" /> 
+                                    <view class='text'>{{item.TypeName}}</view>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+</view>

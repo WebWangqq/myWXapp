@@ -1,0 +1,46 @@
+.tabBarCon{position:fixed;top:0;left:0;width:100%;height:80rpx;background-color:#ffffff;}
+.tabBarCon:after{content:'';position: absolute;left:0;bottom:0;width:100%;height:1px;background-color:#dcdcdc;
+-webkit-transform: scaleY(0.5);
+-moz-transform: scaleY(0.5);
+-ms-transform: scaleY(0.5);
+-o-transform: scaleY(0.5);
+transform: scaleY(0.5);
+}
+.tabBarCon .content{height:80rpx;display:flex;display: -webkit-box;-webkit-box-orient:horizontal;}
+.tabBarCon .item{position:relative;height:80rpx;margin:0 20rpx;line-height:80rpx;font-size:24rpx;}
+.tabBarCon .item:last-child{width:1px;margin:0;}
+.tabBarCon .current{color:#ff0000;}
+.tabBarCon .current:after{content:'';position: absolute;left:0;bottom:1px;width:100%;height:2px;background-color:#ff0000;}
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.wrap{margin-top:80rpx;}
+.code text{display:inline-block;margin-left:20rpx;color:#f00;font-size:30rpx;font-weight:bold;}
+.shopImg{width:504rpx;margin-top:10rpx;margin-left: 10rpx;}
+.shopImg4{width:336rpx;}
+.shopImg image{float:left;width:158rpx;height:158rpx;margin-top:10rpx;margin-right:10rpx;}
+
+
+.listCon{width:100%;height:240rpx;background-color:#ffffff;}
+.listCon .itemCon .item{height:120rpx;padding:10rpx;opacity:.5;border-bottom:1rpx solid #dcdcdc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:box;display:-moz-box;display:-webkit-box;}
+.listCon .current .item{opacity:1}
+.listCon .itemCon .item:nth-child(2){border-bottom:none;}
+.listCon .itemCon .item image{width:100rpx;height:100rpx;border-radius:50%;}
+.listCon .itemCon .item .name{line-height:100rpx;box-flex:1; -moz-box-flex:1; -webkit-box-flex:1;}
+.listCon .itemCon .item .btn{width:100rpx;height:60rpx;margin-top:20rpx;color:#ffffff;font-size:24rpx;text-align:center;line-height:60rpx;background-color:#ff0000;border-radius:4rpx;}
+
+
+.mySwiperCon{position:relative;width:100%;height:240rpx;margin-top:50rpx;background-color:#ffffff;overflow:hidden;}
+.mySwiperCon .itemCon .item{height:120rpx;padding:10rpx;opacity:.5;border-bottom:1rpx solid #dcdcdc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:box;display:-moz-box;display:-webkit-box;}
+.mySwiperCon .current .item{opacity:1}
+.mySwiperCon .itemCon .item:nth-child(2){border-bottom:none;}
+.mySwiperCon .itemCon .item image{width:100rpx;height:100rpx;border-radius:50%;}
+.mySwiperCon .itemCon .item .name{line-height:100rpx;box-flex:1; -moz-box-flex:1; -webkit-box-flex:1;}
+.mySwiperCon .itemCon .item .btn{width:100rpx;height:60rpx;margin-top:20rpx;color:#ffffff;font-size:24rpx;text-align:center;line-height:60rpx;background-color:#ff0000;border-radius:4rpx;}
+.mySwiperCon .con{position:absolute;top:0;left:0;width:100%;background-color:#ffffff;}
+.mySwiperCon .con1{z-index:5}
+.mySwiperCon .con2{z-index:4}

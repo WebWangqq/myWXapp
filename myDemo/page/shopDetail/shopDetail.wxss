@@ -1,0 +1,19 @@
+/* page/shopDetail/shopDetail.wxss */
+.path{word-break:break-all;}
+.list{background-color:#fff;}
+.item{width:660rpx;padding:10rpx 45rpx;margin:0 auto;border-bottom:1rpx solid #dcdcdc;}
+.item image{float:left;width:200rpx;height:200rpx;margin:10rpx;}
+.shopImg4{width:440rpx;}
+
+.previewImgBox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,1); z-index:1000}
+.previewImgBox .swipwerCon{position:relative;width:100%;height:100%;z-index:2;}
+.previewImgBox swiper swiper-item{width:100%;height:100%;}
+.previewImgBox swiper swiper-item .img{position:absolute;top:50%;left:50%;width:100%;transform: translate(-50%,-50%);}
+.previewImgBox swiper swiper-item .textCon{position:absolute;bottom:0;left:0;width:710rpx;padding:20rpx;color:#fff;background-color:rgba(0,0,0,.7);}
+.previewImgBox .more{position:absolute;top:50%;right:-140rpx;width:20rpx;padding:0 60rpx;color:#000;z-index:3;background-color: #fff;
+animation:right 1s;
+-webkit-animation:right 1s;
+}
+
+.shareBtn{display:block;width:200rpx;height:60rpx;line-height:60rpx;color:#fff;font-size:30rpx;background-color:#f00;border-radius:10rpx;}
+.shared{background-color:#ccc}

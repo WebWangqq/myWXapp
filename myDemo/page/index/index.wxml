@@ -1,0 +1,235 @@
+<view class="container">
+	<view class="redPacketNum">
+		<view class="content">
+			<image src="../../img/redPacket/z_biaoti@3x.png" />
+			<view class="num">
+				<image src="../../img/redPacket/z_shuzibeijing@3x.png" />
+				<text>180</text>
+			</view>
+		</view>
+	</view>
+	<!--//redPacketNum end-->
+	
+	<view class="scrollView">
+		<image class="topImg" src="../../img/redPacket/RP_zhedang@3x.png" />
+		<image class="bgImg" src="../../img/redPacket/z_diqiu@3x.png" />
+		<view class="content" wx:if="{{redPacketLength}}" style="height:{{contnetHeight}}px">
+			<scroll-view class="itemCon" scroll-y  style="height:{{contnetHeight}}px">
+				<view wx:for="{{redPacketList1}}" wx:key="id">
+					<view class="item" catchtap="redPacketBoxShow">
+						<image class="bg" src="../../img/redPacket/z_hongbao@3x.png" />
+						<image class="logo" src="{{item.ShopLogo}}" />
+						<text>{{item.ShopName}}</text>
+					</view>
+				</view>
+			</scroll-view>
+			<scroll-view class="itemCon" scroll-y  style="height:{{contnetHeight}}px">
+				<view wx:for="{{redPacketList2}}" wx:key="id">
+					<view class="item" catchtap="redPacketBoxShow">
+						<image class="bg" src="../../img/redPacket/z_hongbao@3x.png" />
+						<image class="logo" src="{{item.ShopLogo}}" />
+						<text>{{item.ShopName}}</text>
+					</view>
+				</view>
+			</scroll-view>
+			<scroll-view class="itemCon" scroll-y  style="height:{{contnetHeight}}px">
+				<view wx:for="{{redPacketList3}}" wx:key="id">
+					<view class="item" catchtap="redPacketBoxShow">
+						<image class="bg" src="../../img/redPacket/z_hongbao@3x.png" />
+						<image class="logo" src="{{item.ShopLogo}}" />
+						<text>{{item.ShopName}}</text>
+					</view>
+				</view>
+			</scroll-view>
+			<view class="clear"></view>
+		</view>
+		<view class="content2" wx:if="{{!redPacketLength}}" style="height:{{contnetHeight}}px">
+			<view class="countdownCon">
+				<view class="tip">离下次抢红包还剩</view>
+				<view class="dateTime clearfix">
+					<view class="time">
+						<image class="img1" src="../../img/redPacket/z_shijian-@3x.png" />
+						<text>{{hour}}</text>
+					</view>
+					<view class="time2"><image class="img2" src="../../img/redPacket/z_shijiandian@3x.png" /></view>
+					<view class="time">
+						<image class="img1" src="../../img/redPacket/z_shijian-@3x.png" />
+						<text>{{minute}}</text>
+					</view>
+					<view class="time2"><image class="img2" src="../../img/redPacket/z_shijiandian@3x.png" /></view>
+					<view class="time">
+						<image class="img1" src="../../img/redPacket/z_shijian-@3x.png" />
+						<text>{{second}}</text>
+					</view>
+				</view>
+				<image class="img" src="../../img/redPacket/z_quqiangmiaozhao@3x.png" />
+			</view>
+		</view>
+		<image class="bottomImg" wx:if="{{redPacketLength}}" src="../../img/redPacket/z_hongbaodong@3x.png" />
+	</view>
+	<!--//scrollView end-->
+	
+
+	<!--//myWallet-->
+	<view class="myWallet">
+		<view class="title clearfix">
+			<view class="left"><image class="ico1" src="../../img/redPacket/z_qianbao@3x.png" /><text>我的钱包</text></view>
+			<view class="right" catchtap="strategyBoxShow"><image class="ico2" src="../../img/redPacket/z_gonglv@3x.png" /><text>攻略</text></view>
+			<view class="right chengji" catchtap="gradeBoxShow"><image class="ico3" src="../../img/redPacket/z_chengji@3x.png" /><text>成绩</text></view>
+		</view>
+		<!--title end-->
+		<view class="content clearfix">
+			<view class="left tixian">
+				<image class="left tixianImg" src="../../img/redPacket/z_dianjitixian@3x.png" />
+				<view class="left tixinCon">
+					<image class="tixianImg2" src="../../img/redPacket/z_jinbi_dianjitixian_66.png" />
+					<view class="moneyCon"><text>￥</text><text class="money">8.99</text></view>
+				</view>
+			</view>
+			<view class="left redCon" catchtap="redPacketSceneBoxShow">
+				<image src="../../img/redPacket/z_hongbaoxianchang@3x.png" />
+				<view class="text">红包现场(<text>{{redPacketNum}}</text>)</view>
+			</view>
+			<view class="left redCon">
+				<image src="../../img/redPacket/z_qianggengduohongbao@3x.png" />
+				<view class="text colorYellow">抢更多红包</view>
+			</view>
+			<view class="clear"></view>
+		</view>
+	</view>
+	<!--//myWallet end-->
+
+</view>
+
+<view class="overlay" wx:if="{{redPacketBox}}">
+	<view class="redPacketBox">
+		<view class="bgImg" animation="{{animationData}}"><image src="../../img/redPacket/z_guangshu_two@3x.png" /></view>
+	</view>
+</view>
+
+<!--趣抢攻略-->
+<view class="overlay strategyBox" wx:if="{{strategyBox}}">
+	<view class="navTitle">
+		<text>趣抢攻略</text>
+		<view class="closeBtn" catchtap="strategyBoxShow"><image class="img1" src="../../img/redPacket/z_guanbi@3x(2).png" /></view>
+	</view>
+	<scroll-view scroll-y="true" style="height:{{strategyBoxHeight}}px;">
+		<view class="content">
+			<image class="nav" src="../../img/redPacket/z_shouxianjin@3x.png" />
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<image class="nav" src="../../img/redPacket/z_linghongbao@3x.png" />
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<image class="nav" src="../../img/redPacket/z_qianghongbao@3x.png" />
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<image class="nav" src="../../img/redPacket/z_hongbaotixian@3x.png" />
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+			<view class="item">
+				<image class="ico" src="../../img/redPacket/z_lingxing@3x.png" />
+				<text>加商家为好友，就可以收商家好油给你的现金红包哦</text>
+			</view>
+		</view>	
+	</scroll-view>
+</view>
+<!--趣抢攻略end-->
+
+<!--成绩-->
+<view class="overlay gradeBox" wx:if="{{gradeBox}}">
+	<view class="navTitle">
+		<text class="{{currentNavTab==1?'current':''}}" data-id="1" catchtap="switchGradeTab">抢成功</text>
+		<text class="{{currentNavTab==2?'current':''}}" data-id="2" catchtap="switchGradeTab">被抢</text>
+		<text class="{{currentNavTab==3?'current':''}}" data-id="3" catchtap="switchGradeTab">新人</text>
+		<text class="{{currentNavTab==4?'current':''}}" data-id="4" catchtap="switchGradeTab">到店</text>
+		<view class="closeBtn" catchtap="gradeBoxShow"><image class="img2" src="../../img/redPacket/z_xiala@3x.png" /></view>
+	</view>
+	<view class="hasList" wx:if="{{hasTodayList}}">
+		<scroll-view scroll-y="true" bindscrolltolower="gradeListMore" bindscrolltoupper="gradeListRefresh" style="height:{{strategyBoxHeight}}px;">
+			<!-- <view class="historyList fontW">历史记录</view> -->
+			<view class="listCon">
+				<!--item-->
+				<view class="itemCon" wx:for="{{grade}}" wx:key="id">
+					<view class="item" wx:if="{{item.DType==2?'':'true'}}">
+						<view class="logo"><image src="{{item.APPLogo}}" /></view>
+						<view class="infoCon">
+							<view class="info fontW">
+								<view class="textflex">{{item.APPName}}</view>
+								<view class="infoRight {{currentNavTab==2 ?'colorBlue': 'colorRed'}}">+{{item.Amount}}</view>
+							</view>
+							<view class="info small">
+								<view class="textflex">{{item.content}}</view>
+								<view class="infoRight time">{{item.AddTime}}</view>
+							</view>
+						</view>
+					</view>
+					<view class="historyList fontW" wx:if="{{item.DType==2?'true':''}}">历史记录</view>
+				</view>
+				<!--item end-->
+			</view>
+			<view wx:if="{{hasMoreGrade}}" class="loading"><image src="../../img/jiazaizhongde.gif" /><text>正在加载</text></view>
+			<view wx:if="{{!hasMoreGrade}}" class="loading"><text>没有更多内容了！</text></view>
+		</scroll-view>
+	</view>
+	<view class="noList" wx:if="{{!hasTodayList}}">
+		<image src="../../img/redPacket/z_zhanwujinrichengji@3x.png" />
+	</view>
+</view>
+<!--成绩end-->
+
+<!--红包现场-->
+<view class="overlay redPacketSceneBox" wx:if="{{redPacketSceneBox}}" catchtap="redPacketSceneBoxShow"></view>
+<view class="redPacketSceneBoxContent" wx:if="{{redPacketSceneBox}}" style="margin-top:{{redPacketSceneMtop}}">
+	<view class="sceneTitle">
+		<view class="numCon">
+			<text>{{redPacketNum}}个红包现场</text>
+			<image src="../../img/redPacket/z_hongbaoxianchangjinbi@3x.png" />
+			<text class="colorRed">¥{{redPacketMoney}}</text>
+		</view>
+		<view class="tip">每个红包现场达10元可提现</view>
+	</view>
+	<scroll-view class="redPacketSceneList" scroll-y bindscrolltolower="redPacketSceneListMore" bindscrolltoupper="redPacketSceneListRefresh" style="height:{{redPacketSceneListHeight}}px">
+		<view class="item" wx:for="{{redPacketSceneList}}" wx:key="id">
+			<view class="info">
+				<view class="infoCon">
+					<image class="logo" src="{{item.ShopLogo}}" />
+					<view class="name">{{item.ShopName}}</view>
+					<view class="money">
+						<image src="../../img/redPacket/z_xianxingjinbi@3x.png" />
+						<text class="colorRed">¥{{item.Balance}}</text>
+					</view>
+				</view>
+				<view class="peopleNum">
+					<image class="ico1" src="../../img/redPacket/z_renshu_65.png" />
+					<text>{{item.hyTotalCount}}</text>
+					<image class="ico2" src="../../img/redPacket/z-gengduojiantou@3x.png" />
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{hasMoreRedPacket}}" class="loading"><image src="../../img/jiazaizhongde.gif" /><text>正在加载</text></view>
+		<view wx:if="{{!hasMoreRedPacket}}" class="loading"><text>没有更多内容了！</text></view>
+	</scroll-view>
+</view>
+
+

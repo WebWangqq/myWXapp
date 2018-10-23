@@ -1,0 +1,2 @@
+.cityCon{font-size:0;}
+.cityCon .item{display:inline-block;width:223rpx;height:70rpx;margin-left:20rpx;margin-top:20rpx;text-align:center;line-height:70rpx;font-size:24rpx;background-color:#ffffff;border-radius:5rpx;}

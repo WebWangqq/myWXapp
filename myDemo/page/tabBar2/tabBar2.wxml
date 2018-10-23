@@ -1,0 +1,26 @@
+<view class="dingxian"></view>
+<scroll-view class="tabBarCon" scroll-x="true" scroll-left="{{scrollLeftdata}}" scroll-with-animation="true" bindscroll="tabBarScroll">
+    <view class="content">
+        <view id="tabIndx0" class="item {{tabIndx==0 ? 'current' : ''}}" data-index="0" data-typename="热门" catchtap="tabBarClick">热门</view>
+        <block wx:for="{{shoptypeData}}" wx:key="id" wx:for-index="index">
+            <view id="tabIndx{{index+1}}" class="item {{tabIndx==index+1 ? 'current' : ''}}" data-index="{{index+1}}" data-typename="{{item.Typename}}" catchtap="tabBarClick">{{item.Typename}}</view>
+        </block>
+        <view class="item"></view>
+    </view>
+</scroll-view>
+
+<view class="wrap">
+	<view class="code">
+		<block wx:for="{{code}}" wx:key="id">
+			<text>{{item}}</text>
+		</block>
+	</view>
+</view>
+
+<view class="shopImg shopImg4 clearfix">
+	<block wx:for="{{shopImg}}" wx:key="id" wx:for-index="index">
+		<image mode="aspectFill" src="{{item}}" data-index="{{index}}"  catchtap="previewImg" />
+	</block>
+</view>
+
+

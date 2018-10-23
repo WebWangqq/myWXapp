@@ -1,0 +1,44 @@
+<view class="dingxian"></view>
+<view class="searchCon">
+	<view class="info"><input value="{{inputVal}}" bindinput="inputTxt" bindconfirm="searchBtnClick" id="searchText" class="field" type="text" placeholder="请输入搜索内容" /></view>
+	<view class="btn" bindtap="searchBtnClick">搜索</view>
+</view>
+
+<map class="mapCon" wx:if="{{showMap}}" style="height:{{mapHeight}}px" longitude="{{mylon}}" latitude="{{mylat}}" scale="{{scale}}" markers="{{markers}}"  circles="{{circles}}" show-location="false" bindmarkertap="markertap" bindtap="hideModal"></map>
+
+<cover-view class="modalMask" bindtap="hideModal" wx:if="{{showModal}}">
+	<cover-view class="name">{{name}}</cover-view>
+	<cover-view class="addressCon">电话：{{tel}}</cover-view>
+	<cover-view class="addressCon">
+		<cover-view class="address">{{address}}</cover-view>
+		<cover-view class="juli">{{juli}}</cover-view>
+	</cover-view>
+	<cover-view class="addressCon colorMain">{{category}}</cover-view>
+	<cover-view class="btnCon">
+		<cover-view class="btn">网点详情</cover-view>
+		<cover-view class="btn" catchtap="daohang" data-lon="{{currentLon}}" data-lat="{{currentLat}}">开始导航</cover-view>
+	</cover-view>
+	<cover-view class="more" bindtap="seeMore">点击查看更多</cover-view>
+</cover-view>
+
+<view class="list" wx:if="{{haveData}}">
+	<block wx:for="{{listData}}" wx:key="id" wx:for-index="index">
+		<view class="item" bind:tap="markerDetail" data-index="{{index}}">
+			<view class="name">{{index+1}}.{{item.title}}</view>
+			<view class="ico tel"><image src="../../img/branchIco1.png"></image><label data-tel="{{item.tel}}" bind:tap="dadianhua">{{item.tel}}</label><span>{{item.juli}}</span></view>
+			<view class="ico address"><image src="../../img/branchIco2.png"></image>{{item.address}}</view>
+		</view>
+	</block>
+	<view wx:if="{{hasMore}}" class="loading">
+        <image src="../../img/jiazaizhongde.gif"></image>
+        <text>正在加载</text>
+    </view>
+    <view wx:if="{{hasMore1}}" class="nohave">
+        <text>我是有底线的</text>
+    </view>
+</view>
+<block wx:if="{{noData}}">
+  <view class='nodata'>
+    暂无数据
+  </view>
+</block>

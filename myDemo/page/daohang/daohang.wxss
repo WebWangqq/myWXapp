@@ -1,0 +1,13 @@
+.navCon{position:fixed;top:0;left:0;width:100%;height:100rpx;font-size:0;background-color:#ffffff;z-index:10}
+.navCon:after{position:fixed;bottom:0;left:0;width:100%;height:1px;background-color:#dcdcdc;z-index:1000;
+-webkit-transform: scaleY(0.5);
+-moz-transform: scaleY(0.5);
+-ms-transform: scaleY(0.5);
+-o-transform: scaleY(0.5);
+transform: scaleY(0.5);
+}
+.navCon .item{display:inline-block;width:25%;height:100rpx;font-size:30rpx;line-height:100rpx;text-align:center;}
+.navCon .current{position:relative;color:#ff801a}
+.navCon .current:after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:#ff801a;}
+.mapCon{width:100%;height:600rpx;}
+.list .item{padding-left:20rpx;line-height:2}

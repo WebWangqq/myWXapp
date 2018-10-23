@@ -1,0 +1,7 @@
+<view class="dingxian"></view>
+<view class="list">
+	<block wx:for="{{cityData}}" wx:key="id">
+		<view class="item" data-id="{{item.id}}"  bind:tap="toDetail2">{{item.fullname}}</view>
+		<view class="bottomLine"></view>
+	</block>
+</view>

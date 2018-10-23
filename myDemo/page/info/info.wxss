@@ -1,0 +1,110 @@
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.clearfix:after {content:"."; clear:both; display:block; height:0; font-size:0; visibility:hidden; overflow:hidden;}
+.clearfix {display:block;}
+button{border:none !important;padding:0;line-height:1.5;}
+
+
+page{width: 100%;height: 100%;background-color: #f5f5f5;}
+.dingxian {width: 100%;height: 1px;background-color: #adadad;position: fixed;z-index: 999;top: 0;}
+.buttonCon button{height:80rpx;margin-bottom:20rpx;line-height:80rpx;}
+
+.specialityCon {padding:15rpx 7rpx 7rpx;}
+.specialityCon .item{float:left;position:relative;width:176rpx;height:176rpx;margin:0 0 8rpx 8rpx;}
+.specialityCon .item .img{width:176rpx;height:176rpx;}
+.specialityCon .item .label{position:absolute;bottom:6rpx;right:6rpx;width:74rpx;height:28rpx;z-index:2}
+.specialityCon .item .label image{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+.specialityCon .item .label text{position:relative;display:block;width:100%;height:100%;text-align:center;line-height:28rpx; color:#383838;font-size:16rpx;z-index:2}
+.specialityCon .item .more{position:absolute;top:0;right:0;width:176rpx;height:176rpx;display:flex;align-items:center;justify-content:center;text-align:center;background-color:rgba(0,0,0,.58);z-index:3}
+.specialityCon .item .more .text{margin:7rpx 0;color:#fff;font-size:20rpx;}
+.specialityCon .item .more .text:nth-child(2){margin-bottom:10rpx;}
+.specialityCon .more image{display:block;width:32rpx;height:22rpx;margin:0 auto;}
+
+.shopInfoCon{margin-bottom:20rpx;background-color:#fff;}
+.shopInfoCon .shopInfo{position:relative;height:120rpx;padding:30rpx 120rpx 30rpx 145rpx;margin:0 30rpx;border-bottom:1rpx solid #dcdcdc;}
+.shopInfoCon .shopInfo .img{position:absolute;top:50rpx;right:0;width:114rpx;height:34rpx;}
+.shopInfoCon .shopInfo .logo{position:absolute;top:30rpx;left:0;width:120rpx;height:120rpx;border:1rpx solid #dcdcdc;}
+.shopInfoCon .shopInfo .shopName{color:#000;font-size:34rpx;font-weight:bold;line-height:74rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.shopInfoCon .shopInfo .shopType .type{color:#8d8d8d;font-size:24rpx;line-height:36rpx;}
+.shopInfoCon .shopInfo .shopType .attention{display:inline-block;}
+.shopInfoCon .shopInfo .shopType .attention button{display:inline;}
+.shopInfoCon .shopInfo .shopType .attention .con{display:inline-block;width:84rpx;padding:10rpx 0;margin-left:18rpx;line-height:18rpx;color:#f00;font-size:20rpx;text-align:center;border:1px solid #f00;border-radius:6rpx;}
+.shopInfoCon .shopInfo .shopType .attention .con image{display:inline-block;width:18rpx;height:18rpx;margin-right:4rpx;}
+
+.shopInfoCon .linkCon{position:relative;padding:20rpx 160rpx 20rpx 30rpx;}
+.shopInfoCon .linkCon .address{position:relative;padding-left:42rpx;color:#282828;font-size:28rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.shopInfoCon .linkCon .address .ico{position:absolute;top:50%;left:0;width:24rpx;height:28rpx;margin-top: -14rpx;}
+.shopInfoCon .linkCon .distance{padding-left:42rpx;margin-top:10rpx;color:#8d8d8d;font-size:24rpx;}
+.shopInfoCon .linkCon .shopTel{position:absolute;top:50%;right:0;width:130rpx;height:50rpx;margin-top:-25rpx;display:flex;align-items:center;justify-content:center;border-left:1rpx solid #dcdcdc;}
+.shopInfoCon .linkCon .shopTel image{width:36rpx;height:36rpx;}
+
+.navTitle{position:relative;padding:30rpx 0 30rpx 25rpx;margin-left:30rpx;color:#282828;font-size:28rpx;font-weight:bold;}
+.navTitle:before{content:'';position:absolute;top:50%;left:0;width:10rpx;height:10rpx;margin-top:-5rpx;background-color:#6c6c6c;border-radius:50%;}
+.myActivity{padding-bottom:20rpx;margin-bottom:20rpx;background-color:#fff;}
+.myActivity .quanCon{width:100%;height:168rpx;}
+.myActivity .quanCon .content{height:168rpx;display:flex;display: -webkit-box;-webkit-box-orient:horizontal;}
+.myActivity .quanCon .itemCon{position:relative;width:324rpx;height:168rpx;margin-left:15rpx;}
+.myActivity .quanCon .itemCon .con{width:324rpx;height:168rpx;color:#fff;}
+.myActivity .quanCon .itemCon.used .con{color:#414141;}
+.myActivity .quanCon .itemCon:nth-child(1){margin-left:30rpx;}
+.myActivity .quanCon .itemCon .bg{position:absolute;top:0;left:0;width:324rpx;height:168rpx;z-index:1}
+.myActivity .quanCon .itemCon .textCon{position:relative;padding:25rpx 15rpx 0 15rpx;text-align:center;z-index: 2}
+.myActivity .quanCon .itemCon .textCon .text:nth-child(1){width:100%;font-size:24rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.myActivity .quanCon .itemCon .textCon .text:nth-child(2){margin-top:5rpx;font-size:18rpx;font-weight:bold;}
+.myActivity .quanCon .itemCon .btn{position:absolute;bottom:9rpx;left:0;width:100%;text-align:center;line-height:60rpx;font-size:26rpx;color:#282828;z-index:3}
+.myActivity .quanCon .toUse .textCon .text:nth-child(2),.myActivity .quanCon .used .textCon .text:nth-child(2){font-weight:normal;}
+.myActivity .quanCon .itemCon.used .btn{color:#8d8d8d;}
+.myActivity .quanCon .more{margin-left:0;width:164rpx;font-size:26rpx;color:#f9d33a;display:flex;align-items:center;justify-content:center;}
+.myActivity .quanCon .more image{display:block;width:28rpx;height:28rpx;margin:10rpx auto 0;}
+
+
+.shopDynamic{padding-bottom:102rpx;background-color:#fff;}
+.shopDynamic .itemCon{position:relative;padding:0 30rpx 30rpx 130rpx;margin-top:30rpx;border-bottom:1rpx solid #dcdcdc}
+.shopDynamic .itemCon:nth-child(1){margin-top:0;}
+.shopDynamic .itemCon .logo{position:absolute;top:0;left:25rpx;width:86rpx;height:86rpx;border:1rpx solid #dcdcdc;}
+.shopDynamic .itemCon .shopName{font-size:30rpx;color:#030303;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.shopDynamic .itemCon .time{margin-top:15rpx;color:#8d8d8d;font-size:24rpx;}
+.shopDynamic .itemCon .shopText{margin-top:15rpx;font-size:28rpx;color:#030303;line-height:1.5;text-align:justify;}
+.shopDynamic .itemCon .shopImg{width:504rpx;margin-top:10rpx;}
+.shopDynamic .itemCon .shopImg4{width:336rpx;}
+.shopDynamic .itemCon .shopImg image{float:left;width:158rpx;height:158rpx;margin-top:10rpx;margin-right:10rpx;}
+.shopDynamic .itemCon .shopVideo{width:auto;margin-top:20rpx;}
+.shopDynamic .itemCon .shopVideo .shopVideoCon{position:relative;display:inline-block;}
+
+.shopDynamic .itemCon .shopVideoCon image:nth-child(2){position:absolute;top:50%;left:50%;width:70rpx;height:70rpx;margin:-35rpx 0 0 -35rpx;z-index:2}
+
+
+
+.footerNav{position:fixed;bottom:0;left:0;width:100%;background-color:#fff;border-top:1rpx solid #dcdcdc;z-index:1000;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:box;display:-moz-box;display:-webkit-box;}
+.footerNav .item{width:138rpx;}
+.footerNav .item .con{width:138rpx;height:85rpx;padding-top:17rpx;color:#666;font-size:20rpx;}
+.footerNav .item .con image{width:36rpx;height:36rpx;margin:0 auto;}
+.footerNav .item .con image.share{width:44rpx;}
+.footerNav .chat{padding:13rpx 12rpx;box-flex:1; -moz-box-flex:1; -webkit-box-flex:1;}
+.footerNav .chat .btn{width:100%;height:76rpx;line-height:76rpx;font-size:34rpx;color:#fff;background-color:#5ac737;border-radius:6rpx;}
+
+
+.previewImgBox{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,1); z-index:1000}
+.previewImgBox .swipwerCon{position:relative;width:100%;height:100%;}
+.previewImgBox swiper swiper-item{width:100%;height:100%;}
+.previewImgBox swiper swiper-item .img{position:absolute;top:50%;left:50%;width:100%;transform: translate(-50%,-50%);z-index: 3}
+.previewImgBox swiper swiper-item .big{z-index: 4;opacity:0;}
+.previewImgBox swiper swiper-item .show{opacity:1;
+animation:opacity 1s;
+-webkit-animation:opacity 1s;
+}
+.previewImgBox .textCon{position:absolute;bottom:0;left:0;width:660rpx;padding:94rpx 45rpx 25rpx;color:#fff;z-index:100;}
+.previewImgBox .textCon .bg{position:absolute;top:0;left:0;width:750rpx;z-index:101}
+.previewImgBox .textCon .label{position:absolute;top:50rpx;right:45rpx;width:138rpx;height:116rpx;z-index: 103;}
+.previewImgBox .textCon .label image{position:absolute;top:0;left:0;width:138rpx;height:116rpx;z-index:1}
+.previewImgBox .textCon .label text{position:relative;display:block;width:100%;margin-top:40rpx;text-align:center;color:#f00;font-size:30rpx;z-index:2;}
+.previewImgBox .textCon .content{position:relative;z-index:102}
+.previewImgBox .textCon .content .con{margin-bottom:10rpx;line-height:1.5;color:#fff;font-size:28rpx;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:box;display:-moz-box;display:-webkit-box;}
+.previewImgBox .textCon .content .con text{font-size:30rpx;font-weight:bold;}
+.previewImgBox .textCon .content .con .info{text-align:justify; box-flex:1; -moz-box-flex:1; -webkit-box-flex:1;}
+.previewImgBox .more{position:absolute;top:0;right:-156rpx;display:flex;align-items:center;width:26rpx;height:100%;padding:0 65rpx;color:#fff;font-size:26rpx;z-index:3;background-color: #000;
+animation:right 1s;
+-webkit-animation:right 1s;
+}
+.previewImgBox .more image{width:26rpx;height:26rpx;margin-bottom:10rpx;}

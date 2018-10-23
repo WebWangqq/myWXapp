@@ -1,0 +1,13 @@
+<cover-view class="dingxian"></cover-view>
+<cover-view class="navCon">
+	<cover-view class="item {{jttype==1 ? 'current' : ''}}" bind:tap="driving">驾车</cover-view>
+	<cover-view class="item {{jttype==2 ? 'current' : ''}}" bind:tap="walking">步行</cover-view>
+	<cover-view class="item {{jttype==3 ? 'current' : ''}}" bind:tap="bicycling">骑行</cover-view>
+	<cover-view class="item {{jttype==4 ? 'current' : ''}}" bind:tap="transit">公交</cover-view>
+</cover-view>
+<map class="mapCon" longitude="{{mylon}}" latitude="{{mylat}}" scale="16"  show-location="true" polyline="{{polyline}}"></map>
+<view class="list">
+	<block wx:for="{{luxiandata}}" wx:key="id">
+		<view class="item">{{item.instruction}}</view>
+	</block>
+</view>
