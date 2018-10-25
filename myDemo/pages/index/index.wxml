@@ -1,0 +1,13 @@
+<view class="dingxian"></view>
+
+
+<view class="formInfo">
+	<view class="itemCon" hover-class="active" bind:tap="toForm"><view class="item">表单</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="toListDelete"><view class="item">列表删除</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="toSearch"><view class="item">搜索-左右</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="totabBar"><view class="item">拼多多-demo</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="totabBar2"><view class="item">导航跳转(列表分页)</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="tomap"><view class="item">地图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+</view>
+
+

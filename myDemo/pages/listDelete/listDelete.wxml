@@ -1,0 +1,8 @@
+<view class="messageCon">
+	<view class="item" wx:for="{{messageInfo}}" wx:key="id" wx:for-index="index">
+		<view class="itemText" style="{{item.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+			<view>{{item.text}}</view>
+		</view>
+		<view class="itemDelete" data-index="{{index}}" catchtap="deleteItem"><text>删除</text></view>
+	</view>
+</view>

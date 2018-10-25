@@ -1,5 +1,8 @@
 {
-	"description": "项目配置文件。",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -8,13 +11,13 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.4",
-	"appid": "wx7dff9ebddae39af8",
-	"projectname": "myDemo",
-	"svr": "/",
-	"client": "/",
-	"qcloudRoot": "/",
-	"miniprogramRoot": "/",
+	"libVersion": "2.3.0",
+	"appid": "wx5615ebd5d1a8d8e9",
+	"projectname": "myWxDemo",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
 	"condition": {
 		"search": {
 			"current": -1,
@@ -29,6 +32,7 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
@@ -37,23 +41,8 @@
 				{
 					"id": 0,
 					"name": "test",
-					"pathName": "page/tabBar2/tabBar2",
-					"query": "",
-					"scene": "1011"
-				},
-				{
-					"id": 1,
-					"name": "1",
-					"pathName": "page/mapCity/mapCity",
-					"query": "",
-					"scene": "1011"
-				},
-				{
-					"id": 2,
-					"name": "1",
-					"pathName": "page/daohang/daohang",
-					"query": "",
-					"scene": "1011"
+					"pathName": "pages/map/map",
+					"query": ""
 				}
 			]
 		}

@@ -1,8 +1,0 @@
-{	
-	"navigationBarBackgroundColor":"#ff693e",
-	"navigationBarTextStyle":"white",
-	"navigationBarTitleText": "信息",
-    "usingComponents": {
-        "test": "/components/test/test"
-    }
-}
