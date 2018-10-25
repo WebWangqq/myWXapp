@@ -10,7 +10,10 @@
         "pages/mapSearch/index",
         "pages/mapCity/mapCity",
         "pages/mapCityDetail/mapCityDetail",
-        "pages/daohang/daohang"
+        "pages/daohang/daohang",
+
+        "pages/bar/bar",
+        "pages/line/line"
     ],
     "window": {
         "backgroundTextStyle": "light",

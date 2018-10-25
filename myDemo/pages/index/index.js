@@ -39,4 +39,14 @@ Page({
             url: '../map/map'
         })
     },
+    tobar:function(){
+        wx.navigateTo({
+            url: '../bar/bar'
+        })
+    },
+    toline:function(){
+        wx.navigateTo({
+            url: '../line/line'
+        })
+    },
 })
