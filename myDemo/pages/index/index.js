@@ -9,6 +9,11 @@ Page({
     */
     data: {
     },
+    todemo:function(){
+        wx.navigateTo({
+            url: '../demo/demo',
+        })
+    },
     toForm:function(){
         wx.navigateTo({
             url: '../form/form',

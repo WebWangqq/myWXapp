@@ -1,0 +1,5 @@
+.wrap{margin-top:80rpx;}
+.code text{display:inline-block;margin-left:20rpx;color:#f00;font-size:30rpx;font-weight:bold;}
+.shopImg{width:504rpx;margin-top:10rpx;margin-left: 10rpx;}
+.shopImg4{width:336rpx;}
+.shopImg image{float:left;width:158rpx;height:158rpx;margin-top:10rpx;margin-right:10rpx;}

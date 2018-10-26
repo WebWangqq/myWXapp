@@ -11,16 +11,14 @@
         "pages/mapCity/mapCity",
         "pages/mapCityDetail/mapCityDetail",
         "pages/daohang/daohang",
-
         "pages/Ebar/bar",
         "pages/Eline/line",
         "pages/Epie/pie",
-
         "pages/bar/bar",
         "pages/line/line",
-        "pages/pie/pie"
+        "pages/pie/pie",
+        "pages/demo/demo"
     ],
-    
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",

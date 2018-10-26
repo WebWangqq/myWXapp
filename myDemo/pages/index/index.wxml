@@ -2,6 +2,7 @@
 
 
 <view class="formInfo">
+	<view class="itemCon" hover-class="active" bind:tap="todemo"><view class="item">demo</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 	<view class="itemCon" hover-class="active" bind:tap="toForm"><view class="item">表单</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 	<view class="itemCon" hover-class="active" bind:tap="toListDelete"><view class="item">列表删除</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 	<view class="itemCon" hover-class="active" bind:tap="toSearch"><view class="item">搜索-左右</view><image class="arrowRight" src="../images/arrowRight.png" /></view>

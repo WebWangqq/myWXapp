@@ -9,18 +9,63 @@
     </view>
 </scroll-view>
 
-<view class="wrap">
-	<view class="code">
-		<block wx:for="{{code}}" wx:key="id">
-			<text>{{item}}</text>
-		</block>
-	</view>
-</view>
+<swiper class="wrap" current="{{tabIndx}}" bindchange="bannerChange" style="height:{{swheight}}px">
+	<swiper-item>
+		<view class="itemCon" id="itemCon0">
+			<swiper class="remenCon_swiper" autoplay="{{autoplay}}" interval="3000" duration="300" indicator-dots="true">
+				<block wx:for="{{imgUrls}}" wx:key="id">
+					<swiper-item>
+						<image src="{{item}}" class="slide-image" width="355" height="150"/>
+					</swiper-item>
+				</block>
+			</swiper>
+			<view style="height:400rpx;"></view>
+		</view>
+	</swiper-item>
 
-<view class="shopImg shopImg4 clearfix">
-	<block wx:for="{{shopImg}}" wx:key="id" wx:for-index="index">
-		<image mode="aspectFill" src="{{item}}" data-index="{{index}}"  catchtap="previewImg" />
+
+	<swiper-item wx:for="{{shoptypeData}}" wx:key="id" wx:for-index="listIndex">
+		<view class="itemCon" id="itemCon{{listIndex+1}}">
+			<view class="listCon">
+				<block wx:for="{{item.SmallShopTypeList}}" wx:key="id">
+					<view class="item">
+						<image src="{{item.TypeImg}}"></image>
+						<view class="name">{{item.TypeName}}</view>
+					</view>
+					<view class="bottomLine"></view>
+				</block>
+			</view>
+		</view>
+	</swiper-item>
+
+	
+</swiper>
+
+
+<!-- <block wx:if="{{tabIndx==0}}">
+	<view class="remenCon">
+		<swiper class="remenCon_swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+			<block wx:for="{{imgUrls}}" wx:key="id">
+				<swiper-item>
+					<image src="{{item}}" class="slide-image" width="355" height="150"/>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view style="height:400rpx;"></view>
+	</view>
+</block> -->
+
+
+<!-- <view wx:if="{{tabIndx!=0}}" class="listCon">
+	<view class="bottomLine"></view>
+	<block wx:for="{{listData}}" wx:key="id">
+		<view class="item">
+			<image src="{{item.TypeImg}}"></image>
+			<view class="name">{{item.TypeName}}</view>
+		</view>
+		<view class="bottomLine"></view>
 	</block>
 </view>
+ -->
 
 

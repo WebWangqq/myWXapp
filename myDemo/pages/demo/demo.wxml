@@ -1,0 +1,17 @@
+<view class="dingxian"></view>
+
+<view class="wrap">
+	<view class="code">
+		<block wx:for="{{code}}" wx:key="id">
+			<text>{{item}}</text>
+		</block>
+	</view>
+</view>
+
+
+
+<view class="shopImg shopImg4 clearfix">
+	<block wx:for="{{shopImg}}" wx:key="id" wx:for-index="index">
+		<image mode="aspectFill" src="{{item}}" data-index="{{index}}"  catchtap="previewImg" />
+	</block>
+</view>
