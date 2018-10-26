@@ -977,7 +977,7 @@ Page({
         }
     },
     toerjilist: function(e) {
-        if (clickLock == true) {
+        /*if (clickLock == true) {
             clickLock = false
             var that = this
             var shoptypeid = e.currentTarget.dataset.shoptypeid
@@ -986,15 +986,15 @@ Page({
             wx.navigateTo({
                 url: '/pages/erjilist/erjilist?shoptypeid=' + shoptypeid + '&smallshoptypeid=' + smallshoptypeid + '&typename=' + typename,
             })
-        }
+        }*/
     },
     toSearch: function() {
-        if (clickLock == true) {
+        /*if (clickLock == true) {
             clickLock = false
             wx.navigateTo({
                 url: '/pages/sousuoList/index'
             })
-        }
+        }*/
     }
 
 })

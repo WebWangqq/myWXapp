@@ -809,20 +809,16 @@ Page({
 				})
 			}).exec()
 		}
-	
+		wx.createSelectorQuery().select('#itemCon' + tabIndx).boundingClientRect(function(rect) {
+			var height = rect.height
+			that.setData({
+				swheight:height
+			})
+		}).exec()
 		for(var i=0;i<that.data.shoptypeData.length+1;i++){
-			if(i==tabIndx){
-				wx.createSelectorQuery().select('#itemCon' + i).boundingClientRect(function(rect) {
-					var height = rect.height
-					that.setData({
-						swheight:height
-					})
-				}).exec()
-			}
 			wx.createSelectorQuery().select('#itemCon' + i).boundingClientRect(function(rect) {
 				var height = rect.height
 				swheights.push(height)
-				
 			}).exec()
 
 		}
