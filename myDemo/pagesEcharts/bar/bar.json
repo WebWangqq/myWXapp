@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Echarts-柱状图",
+    "usingComponents":
+    {
+        "ec-canvas": "../ec-canvas/ec-canvas"
+    }
+}

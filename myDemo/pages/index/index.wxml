@@ -8,9 +8,12 @@
 	<view class="itemCon" hover-class="active" bind:tap="totabBar"><view class="item">拼多多-demo</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 	<view class="itemCon" hover-class="active" bind:tap="totabBar2"><view class="item">导航跳转(列表分页)</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 	<view class="itemCon" hover-class="active" bind:tap="tomap"><view class="item">地图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+</view>
 
-	<view class="itemCon" hover-class="active" bind:tap="tobar"><view class="item">柱状图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
-	<view class="itemCon" hover-class="active" bind:tap="toline"><view class="item">折线图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+<view class="formInfo">
+	<view class="itemCon" hover-class="active" bind:tap="tobar"><view class="item">Echarts-柱状图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="toline"><view class="item">Echarts-折线图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="topie"><view class="item">Echarts-饼状图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
 </view>
 
 

@@ -41,12 +41,17 @@ Page({
     },
     tobar:function(){
         wx.navigateTo({
-            url: '../bar/bar'
+            url: '/pagesEcharts/bar/bar'
         })
     },
     toline:function(){
         wx.navigateTo({
-            url: '../line/line'
+            url: '/pagesEcharts/line/line'
+        })
+    },
+    topie:function(){
+        wx.navigateTo({
+            url: '/pagesEcharts/pie/pie'
         })
     },
 })

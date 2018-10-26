@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Echarts-折线图",
+    "usingComponents":
+    {
+        "ec-canvas": "../ec-canvas/ec-canvas"
+    }
+}

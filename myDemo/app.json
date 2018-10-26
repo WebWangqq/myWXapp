@@ -10,12 +10,19 @@
         "pages/mapSearch/index",
         "pages/mapCity/mapCity",
         "pages/mapCityDetail/mapCityDetail",
-        "pages/daohang/daohang",
-
-        "pages/bar/bar",
-        "pages/line/line"
+        "pages/daohang/daohang"
     ],
-    "window": {
+    "subPackages": [
+    {
+        "root": "pagesEcharts",
+        "pages": [
+            "bar/bar",
+            "line/line",
+            "pie/pie"
+        ]
+    }],
+    "window":
+    {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "demo",

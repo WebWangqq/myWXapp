@@ -1,4 +1,4 @@
-import * as echarts from '../../ec-canvas/echarts';
+import * as echarts from '../ec-canvas/echarts';
 
 let chart = null;
 
@@ -16,13 +16,12 @@ function initChart(canvas, width, height) {
             left: 'center'
         },*/
         color: ["#37A2DA", "#67E0E3"],
-        /*legend: {
+        legend: {
             data: ['A', 'B', 'C'],
-            top: 50,
+            top: 0,
             left: 'center',
-            backgroundColor: 'red',
             z: 100
-        },*/
+        },
         grid: {
             left: 20,
             right: 20,
