@@ -10,9 +10,11 @@ App({
         })
 	},
 	onShow:function(e){
-
+		
 	},
 	globalData:{
+		appid: 'wx7dff9ebddae39af8',
+    	secret: '3e9e9cff960f1b9bbe7f6eb88b2b95a4',
 		domain:'http://221.122.101.72',
 		edition:'',
 		//imgPath:'http://work.qujie365.com/staticImg/SmallProgram/pic',

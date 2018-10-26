@@ -1,0 +1,5 @@
+<view class="dingxian"></view>
+
+<view class="content">
+	<canvas canvas-id="columnCanvas" class="canvas"></canvas>
+</view>

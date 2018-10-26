@@ -1,0 +1,6 @@
+/**index.wxss**/
+.container{width:100%;height:300px;background-color:#ffffff;}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

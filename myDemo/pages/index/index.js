@@ -41,17 +41,32 @@ Page({
     },
     tobar:function(){
         wx.navigateTo({
-            url: '/pagesEcharts/bar/bar'
+            url: '../Ebar/bar'
         })
     },
     toline:function(){
         wx.navigateTo({
-            url: '/pagesEcharts/line/line'
+            url: '../Eline/line'
         })
     },
     topie:function(){
         wx.navigateTo({
-            url: '/pagesEcharts/pie/pie'
+            url: '../Epie/pie'
         })
     },
+    tochartsbar:function(){
+        wx.navigateTo({
+            url: '../bar/bar'
+        })
+    },
+    tochartsline:function(){
+        wx.navigateTo({
+            url: '../line/line'
+        })
+    },
+    tochartspie:function(){
+        wx.navigateTo({
+            url: '../pie/pie'
+        })
+    }
 })

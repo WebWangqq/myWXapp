@@ -2,6 +2,6 @@
     "navigationBarTitleText": "Echarts-饼状图",
     "usingComponents":
     {
-        "ec-canvas": "../ec-canvas/ec-canvas"
+        "ec-canvas": "../../ec-canvas/ec-canvas"
     }
 }

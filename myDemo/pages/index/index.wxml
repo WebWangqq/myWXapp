@@ -17,3 +17,10 @@
 </view>
 
 
+<view class="formInfo">
+	<view class="itemCon" hover-class="active" bind:tap="tochartsbar"><view class="item">charts-柱状图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="tochartsline"><view class="item">charts-折线图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+	<view class="itemCon" hover-class="active" bind:tap="tochartspie"><view class="item">charts-饼状图</view><image class="arrowRight" src="../images/arrowRight.png" /></view>
+</view>
+
+

@@ -1,6 +1,8 @@
-import * as echarts from '../ec-canvas/echarts';
+import * as echarts from '../../ec-canvas/echarts';
 
-let chart = null;
+var app=getApp();
+
+var chart = null;
 
 function initChart(canvas, width, height) {
     chart = echarts.init(canvas, null, {
@@ -20,19 +22,17 @@ function initChart(canvas, width, height) {
             axisPointer: {
                 type: 'shadow'//line,shadow,cross
             }
-
         },
         legend: {
             data: ['系列1', '系列2', '系列3']
         },
         grid:{
-            left: 0,
-            right: 0,
-            bottom: 15,
+            left: 20,
+            right: 20,
+            bottom: 20,
             top: 40,
             containLabel:true
         },
-        
         xAxis: {
             data: ['1月', '2月', '3月', '4月', '5月', '6月'],
             type: 'category',
@@ -51,9 +51,9 @@ function initChart(canvas, width, height) {
             min: 0,
             max: 120,
             interval: 20,
-            /*axisLabel: {
+            axisLabel: {
                 formatter: '{value} 人'
-            },*/
+            },
             axisLine:{
                 lineStyle:{
                     color:'#333'
@@ -150,9 +150,7 @@ Page({
     },
 
     onReady() {
-        setTimeout(function() {
-            // 获取 chart 实例的方式
-            console.log(chart)
-        }, 2000);
+        var that=this
+        console.log(app.globalData.windowWidth)
     }
 });
