@@ -24,7 +24,7 @@ function initChart(canvas, width, height) {
                 type: 'shadow'
             }
         },
-        color: ["#f8e399", "#31c27c"],
+        color: colorsVal,
         legend: {
             data: legendData,
             top: 10,
@@ -141,6 +141,7 @@ Page({
             }
             seriesVal.push(aa)
             legendData.push(myData[i].name)
+            colorsVal.push(myData[i].color)
         }
     }
 });
