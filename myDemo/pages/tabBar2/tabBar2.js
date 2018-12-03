@@ -792,7 +792,7 @@ Page({
 	 */
 	onLoad: function(options) {
 		var that = this
-		leftW = (wx.getSystemInfoSync().windowWidth) * 0.6
+		leftW = (wx.getSystemInfoSync().windowWidth) * 0.5
 		if (options.index) {
 			tabIndx = Number(options.index) + 1
 			var typename = options.typename

@@ -25,3 +25,8 @@
 </view>
 
 
+<view id="tipBox" wx:if="{{tipBoxShow}}" catchtouchmove='true'>
+	<view id="tipBoxCon">
+		<view class="con">{{tipBoxText}}</view>
+	</view>
+</view>

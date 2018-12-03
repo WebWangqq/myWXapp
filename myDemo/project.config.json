@@ -11,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
-	"appid": "wx5615ebd5d1a8d8e9",
-	"projectname": "demo2",
+	"libVersion": "2.4.1",
+	"appid": "wx6a86b7f3dc725ca6",
+	"projectname": "myDemo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

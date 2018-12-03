@@ -877,7 +877,9 @@ Page({
 
 
     },
-
+    onShow:function(){
+        clickLock=true
+    },
 
     typeLeftNav: function(e) {
         var that = this

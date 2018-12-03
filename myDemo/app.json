@@ -21,8 +21,34 @@
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
+        "navigationBarBackgroundColor": "#3c76fe",
         "navigationBarTitleText": "demo",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#a1a2a7",
+        "selectedColor": "#3c76fe",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/pages/images/tabBar/ico1.png",
+                "selectedIconPath": "/pages/images/tabBar/ico1_1.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/demo/demo",
+                "iconPath": "/pages/images/tabBar/ico2.png",
+                "selectedIconPath": "/pages/images/tabBar/ico2_1.png",
+                "text": "我的"
+            },
+            {
+                "pagePath": "pages/demo/demo",
+                "iconPath": "/pages/images/tabBar/ico3.png",
+                "selectedIconPath": "/pages/images/tabBar/ico3_1.png",
+                "text": "我的"
+            }
+        ]
     }
 }

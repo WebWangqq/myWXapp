@@ -9,6 +9,10 @@ Page({
     */
     data: {
     },
+    onLoad:function(){
+        var that=this
+        //utils.showTipBox(that,'请输入正确手机号')
+    },
     todemo:function(){
         wx.navigateTo({
             url: '../demo/demo',

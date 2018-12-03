@@ -67,7 +67,7 @@ transform: scaleX(0.5);
 
 /*tipBox*/
 #tipBox{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;background-color:rgba(0,0,0,0); z-index:10000;overflow:hidden;}
-#tipBoxCon{position:fixed;max-width:60%;min-width:200rpx;padding:10px;background-color:rgba(0,0,0,.7);border-radius:5px;}
-#tipBoxCon .con{text-align:center;color:#fff;font-size:24rpx;}
+#tipBoxCon{position:fixed;max-width:60%;min-width:200rpx;padding:15px 25px;background-color:rgba(0,0,0,.7);border-radius:5px;}
+#tipBoxCon .con{text-align:center;color:#fff;font-size:16px;}
 
 
